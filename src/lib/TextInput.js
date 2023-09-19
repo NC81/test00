@@ -1,3 +1,5 @@
+import React from "react";
+
 const TextInput = ({ type = "text", label, value, onChange }) => (
   <div className="simple-form-group">
     {label && <label className="simple-text-label">{label}</label>}
