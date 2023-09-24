@@ -3,7 +3,9 @@ import { data } from './data';
 const TextInput = ({
   type = "text",
   label,
-  value,
+  value = {
+    data
+  },
   onChange
 }) => /*#__PURE__*/React.createElement("div", {
   className: "simple-form-group"
@@ -12,7 +14,7 @@ const TextInput = ({
 }, label), /*#__PURE__*/React.createElement("input", {
   type: type,
   className: "simple-text-input",
-  value: data,
+  value: value,
   onChange: e => onChange && onChange(e.target.value)
 }));
 export default TextInput;

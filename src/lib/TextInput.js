@@ -1,13 +1,13 @@
 import React from "react";
 import {data} from './data'
 
-const TextInput = ({ type = "text", label, value, onChange }) => (
+const TextInput = ({ type = "text", label, value = {data}, onChange }) => (
   <div className="simple-form-group">
     {label && <label className="simple-text-label">{label}</label>}
     <input
       type={type}
       className="simple-text-input"
-      value={data}
+      value={value}
       onChange={e => onChange && onChange(e.target.value)}
     />
   </div>
