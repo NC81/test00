@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from '../lib/data';
+import { data } from './data';
 const TextInput = ({
   type = "text",
   label,
