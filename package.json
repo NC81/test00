@@ -1,6 +1,6 @@
 {
   "name": "nc81",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -10,13 +10,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/NC81/test00.git"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "rimraf": "^5.0.1",
-    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,7 +41,11 @@
     "@babel/cli": "^7.22.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^18.2.0",
