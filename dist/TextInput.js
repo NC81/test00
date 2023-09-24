@@ -1,4 +1,5 @@
 import React from "react";
+import { data } from '../lib/data';
 const TextInput = ({
   type = "text",
   label,
@@ -11,7 +12,7 @@ const TextInput = ({
 }, label), /*#__PURE__*/React.createElement("input", {
   type: type,
   className: "simple-text-input",
-  value: value,
+  value: data,
   onChange: e => onChange && onChange(e.target.value)
 }));
 export default TextInput;
