@@ -1,4 +1,5 @@
 import React from "react";
+import {data} from '../lib/data'
 
 const TextInput = ({ type = "text", label, value, onChange }) => (
   <div className="simple-form-group">
@@ -6,7 +7,7 @@ const TextInput = ({ type = "text", label, value, onChange }) => (
     <input
       type={type}
       className="simple-text-input"
-      value={value}
+      value={data}
       onChange={e => onChange && onChange(e.target.value)}
     />
   </div>
