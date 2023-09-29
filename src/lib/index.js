@@ -1,3 +1,3 @@
 import TextInput from './Components/text-input'
-import Title from './title'
+import Title from './Components/title'
 export { TextInput, Title }

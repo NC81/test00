@@ -1,3 +1,3 @@
-import TextInput from './text-input';
-import Title from './title';
+import TextInput from './Components/text-input';
+import Title from './Components/title';
 export { TextInput, Title };
