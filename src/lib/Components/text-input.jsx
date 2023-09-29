@@ -1,17 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 import Title from './title'
+import { placeholderFunc } from './tools/format'
+import '../style.css'
 
 const defaultLabel = 'Email Adress'
-const defaultPlaceholder = 'name@example.com'
 const defaultType = 'email'
+const defaultPlaceHolder = placeholderFunc('name@example.com')
 
+// Training component
 export default function TextInput({
   type = defaultType,
   label = defaultLabel,
   value,
   onChange,
-  placeholder = defaultPlaceholder,
+  placeholder = defaultPlaceHolder,
 }) {
+  const [inputString, setInputString] = useState()
+
   return (
     <div style={{ width: 640, margin: '15px auto' }}>
       <Title />
@@ -21,8 +27,8 @@ export default function TextInput({
           placeholder={placeholder}
           type={type}
           className="simple-text-input"
-          value={value}
-          onChange={(e) => onChange && onChange(e.target.value)}
+          value={inputString}
+          onChange={(e) => setInputString(e.target.value)}
         />
       </div>
     </div>
