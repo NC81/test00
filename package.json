@@ -1,7 +1,8 @@
 {
   "name": "nc81",
-  "version": "0.1.40",
-  "main": "dist/index.js",
+  "version": "0.1.50",
+  "main": "dist/index",
+  "types": "dist/index",
   "module": "dist/index.js",
   "files": [
     "dist",
